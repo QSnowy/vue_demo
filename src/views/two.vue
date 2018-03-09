@@ -16,7 +16,6 @@
 
   .container {
     position: relative;
-    color: white;
     font-size: 40px;
   }
 </style>

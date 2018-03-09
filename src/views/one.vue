@@ -1,5 +1,3 @@
-
-
 <template>
   <div class="container">
     <h1>THis is one page</h1>
@@ -11,15 +9,20 @@
 
 <script>
   import axios from 'axios'
+
   export default {
     name: "one",
     methods: {
       sendReq: function () {
-        axios.post('https://www.baidu.com').then(
-
+        axios.get('https://www.baidu.com').then(
+          function (response) {
+            console.log(response);
+          }
         ).catch(
-
-        )
+          function (error) {
+            console.log(error);
+          }
+        );
         console.log('发送一个请求')
       }
     }
